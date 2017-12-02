@@ -1,0 +1,279 @@
+[
+    {
+        displayName: "Required CS",
+        classes: [
+            {
+                department: "COMPSCI",
+                courseNumber: 121,
+                name: "Object-Oriented Programming with Java",
+                credits: 4
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 122,
+                name: "Graphical User Interfaces in Java",
+                credits: 4
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 221,
+                name: "Advanced Java",
+                credits: 4
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 240,
+                name: "C and Assembly Programming",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 255,
+                name: "Data Structures using C++",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 330,
+                name: "Computer Organization",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 350,
+                name: "Org. of Programming Languages",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 355,
+                name: "Analysis of Algorithms & Data Structures",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 357,
+                name: "Principles of Database Design",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 360,
+                name: "Computer Ethics, Social Impact, and Security",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 386,
+                name: "Operating Systems",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 480,
+                name: "Object-Oriented Software Engineering",
+                credits: 4
+            }
+        ]
+    },
+    {
+        displayName: "CS Electives",
+        classes: [
+            {
+                department: "COMPSCI",
+                courseNumber: 323,
+                name: "Artificial Intelligence",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 345,
+                name: "Mobile Application Development",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 348,
+                name: "Data Mining",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 356,
+                name: "Windows Programming",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 375,
+                name: "Local Area Networks",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 410,
+                name: "Computer Graphics",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 430,
+                name: "Computer Architecture",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 456,
+                name: "Theory of Computation",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 457,
+                name: "Database Design II",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 461,
+                name: "Internet Programming",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 491,
+                name: "Special Topics",
+                credits: 3
+            },
+            {
+                department: "COMPSCI",
+                courseNumber: 497,
+                name: "Internship",
+                credits: "2-12"
+            }
+        ]
+    },
+    {
+        displayName: "Required Math",
+        classes: [
+            {
+                department: "MATH",
+                courseNumber: 125,
+                name: "Calculus I",
+                credits: 3
+            },
+            {
+                department: "MATH",
+                courseNumber: 126,
+                name: "Calculus II",
+                credits: 3
+            }, 
+            {
+                department: "MATH",
+                courseNumber: 185,
+                name: "Discrete Mathematics",
+                credits: 3
+            }, 
+            {
+                department: "MATH",
+                courseNumber: 141,
+                name: "Introduction to Statistics",
+                credits: 3
+            }, 
+            {
+                department: "MATH",
+                courseNumber: 241,
+                name: "Introduction to Probability and Statistics",
+                credits: 3
+            }
+        ]
+    },
+    {
+        displayName: "Lab Sequences",
+        classes: [
+            {
+                department: "BIOLOGY",
+                courseNumber: 114,
+                name: "CONCEPTS BIOLOGY I",
+                credits: 4
+            },
+            {
+                department: "BIOLOGY",
+                courseNumber: 115,
+                name: "CONCEPTS BIOLOGY II",
+                credits: 4
+            },
+            {
+                department: "CHEM",
+                courseNumber: 115,
+                name: "CHEMISTRY FOR SCIENCES I",
+                credits: 4
+            },
+            {
+                department: "CHEM",
+                courseNumber: 116,
+                name: "CHEMISTRY FOR SCIENCES I",
+                credits: 4
+            },
+            {
+                department: "EGGS",
+                courseNumber: 120,
+                name: "PHYSICAL GEOLOGY",
+                credits: 4
+            },
+            {
+                department: "EGGS",
+                courseNumber: 130,
+                name: "HISTORICAL GEOLOGY",
+                credits: 4
+            },
+            {
+                department: "PHYSICS",
+                courseNumber: 201,
+                name: "INTRODUCTORY PHYSICS I",
+                credits: 4
+            },
+            {
+                department: "PHYSICS",
+                courseNumber: 202,
+                name: "INTRODUCTORY PHYSICS II",
+                credits: 4
+            },
+            {
+                department: "PHYSICS",
+                courseNumber: 211,
+                name: "GENERAL PHYSICS I",
+                credits: 4
+            },
+            {
+                department: "PHYSICS",
+                courseNumber: 212,
+                name: "GENERAL PHYSICS II",
+                credits: 4
+            }
+        ]
+    },
+    {
+        displayName: "Other Required",
+        classes: [
+            {
+                department: "ENGLISH",
+                courseNumber: 101,
+                name: "Foundations of Writing",
+                credits: 3
+            },
+            {
+                department: "INTSTUDY",
+                courseNumber: 231,
+                name: "Technical Writing",
+                credits: 3
+            },
+            {
+                department: "COMMSTUD",
+                courseNumber: 103,
+                name: "Public Speaking",
+                credits: 3
+            }
+        ]
+    }    
+]

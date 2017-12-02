@@ -1,0 +1,49 @@
+<html>
+    <link href="css/semantic.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+<body>
+    
+    <div id="authentication-form" class="ui text container my-card">
+        <h2 class="ui dividing header">Login</h2>
+        <form action="/api/authenticate" method="post" class="ui form">
+            <div class="field">
+                <label for="husky_id_field">HuskyID: </label>
+                <input id="husky_id_field" type="text" name="logHuskyId" required="" placeholder="HuskyID"/>
+            </div>
+            <div class="field">
+                <label for="password_field">Password: </label>
+                <input id="password_field" type="password" name="logPassword" required="" placeholder="Password"/>
+            </div>
+            <button class="ui button" type="submit">Login</button>
+        </form>
+        
+        <h2 class="ui dividing header">Register</h2>
+        <form action="/api/authenticate" method="post" class="ui form">
+            <div class="field">
+                <label for="huskyid_reg_field">HuskyID: </label>
+                <input id="huskyid_reg_field" type="text" name="huskyId" required="" placeholder="HuskyID"/>
+            </div>
+            <label>Name: </label>
+            <div class="two fields">
+                <div class="field">
+                    <input id="first_name_field" type="text" name="firstName" required="" placeholder="First name"/>
+                </div>
+                <div class="field">
+                    <input id="last_name_field" type="text" name="lastName" required="" placeholder="Last name">
+                </div>
+            </div>
+            <div class="field">
+                <label for="password_reg_field">Password: </label>
+                <input id="password_reg_field" type="password" name="password" required="" placeholder="Password">
+            </div>
+            <div class="field">
+                <label for="password_conf_field">Confirm password: </label>
+                <input id="password_conf_field" type="password" name="passwordConf" required="" placeholder="Confirm password">
+            </div>
+            <button class="ui button" type="submit">Register</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,121 @@
+@import 'palette';
+@import 'dimens';
+@import 'shared';
+
+@mixin card-shadow {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $bu-burgundy;
+}
+
+.ui.button:focus {
+    background-color: $bu-gold;
+    border-bottom: 1px solid rgba(0,0,0,0.125);
+}
+
+div.main-interface-wrapper {
+    display: flex;
+    flex-direction: row;
+    
+    height: 100%;
+    width: 100%;
+}
+
+div.category-nav {
+    height: 100%;
+    width: 15rem;
+    padding: 5em 0 0 0;
+    
+    display: flex;
+    flex-direction: column;
+    
+    background-color: darken($bu-burgundy, 15%);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        
+    & > div.category-tab {
+        padding: 1em 2em;
+        color: $light-text-color;
+        font-weight: bold;
+        font-size: 1.2em;
+        
+        &:hover {
+            cursor: pointer;
+            color: white;
+            background-color: darken($bu-burgundy, 0.5);
+        }
+        
+        &.active {
+            background-color: $bu-gold;
+            color: $dark-text-color;
+            border-top: 2px solid lighten($bu-gold, 0.2);
+            border-bottom: 2px solid lighten($bu-gold, 0.2);
+        }
+    }
+}
+
+div.class-list-container {
+    flex-grow: 1;
+    padding: 5em 2em;
+    overflow-y: scroll;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    
+    .class-card {
+        width: 50em;
+        max-width: 100%;
+        padding: 1.5em 2em;
+        
+        & + .class-card {
+            margin-top: 2em;
+        }
+            
+        span.class-heading {
+            font-size: 1.6em;
+            line-height: 1.5em;
+            
+            span.class-official-name {
+                font-size: 0.9em;
+                background-color: #EFEFEF;
+                border-radius: 0.3em;
+                border: 1px solid rgba(0,0,0,0.2);
+                padding: 0.2em 0.5em;
+                margin-right: 0.6em;
+                white-space: nowrap;
+            }
+        }
+        
+        div.accordion {
+            margin: 1em 0 !important;
+            width: 100%;
+            
+            .ui.feed > .event > .label + .content {
+                padding: 0;
+            }
+            
+            div.interests {
+                display: inline-block;
+                    
+                span.interest-count {
+                    padding: 0.3em 0.6em;
+                    background-color: #BBEEBB;
+                    font-weight: bold;
+                    border-radius: 0.3em;
+                    border: 1px solid rgba(0,0,0,0.2);
+                }
+                
+                span.name-list {
+                    font-style: italic;
+                    color: #444;
+                }
+            }
+        }
+    }
+}

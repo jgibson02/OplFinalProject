@@ -1,0 +1,32 @@
+{
+  "name": "opl-final-project",
+  "version": "0.0.0",
+  "description": "A webapp for students to express interest in courses for the BU CS degree checklist, and also demonstrate features of Javascript.",
+  "main": "server.js",
+  "repository": "",
+  "author": "John Gibson <jonathangibson02@gmail.com> & Volan Nnanpalle <volankang@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.0",
+    "express": "~4.13.4",
+    "express-react-views": "^0.10.4",
+    "express-session": "^1.15.6",
+    "mongoose": "^4.13.4",
+    "node-fetch": "^1.7.3",
+    "semantic-ui-react": "^0.77.0"
+  },
+  "devDependencies": {
+    "create-react-class": "^15.6.2",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-reactify": "^3.0.1",
+    "gulp-sass": "^3.1.0",
+    "mongoose-model-cli": "^1.4.0",
+    "nodemon": "^1.12.1",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "reactify": "^1.1.1"
+  }
+}

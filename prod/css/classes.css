@@ -1,0 +1,90 @@
+.my-card {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  background-color: #fcfcfc;
+  border: 1px solid #bebebe;
+  color: #424242; }
+
+.ui.button {
+  background-color: #ffd261;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #880c35; }
+
+.ui.button:focus {
+  background-color: #ffd261;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+
+div.main-interface-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%; }
+
+div.category-nav {
+  height: 100%;
+  width: 15rem;
+  padding: 5em 0 0 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #42061a;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+  div.category-nav > div.category-tab {
+    padding: 1em 2em;
+    color: #efefef;
+    font-weight: bold;
+    font-size: 1.2em; }
+    div.category-nav > div.category-tab:hover {
+      cursor: pointer;
+      color: white;
+      background-color: #860c34; }
+    div.category-nav > div.category-tab.active {
+      background-color: #ffd261;
+      color: #424242;
+      border-top: 2px solid #ffd262;
+      border-bottom: 2px solid #ffd262; }
+
+div.class-list-container {
+  flex-grow: 1;
+  padding: 5em 2em;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
+  div.class-list-container .class-card {
+    width: 50em;
+    max-width: 100%;
+    padding: 1.5em 2em; }
+    div.class-list-container .class-card + .class-card {
+      margin-top: 2em; }
+    div.class-list-container .class-card span.class-heading {
+      font-size: 1.6em;
+      line-height: 1.5em; }
+      div.class-list-container .class-card span.class-heading span.class-official-name {
+        font-size: 0.9em;
+        background-color: #EFEFEF;
+        border-radius: 0.3em;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 0.2em 0.5em;
+        margin-right: 0.6em;
+        white-space: nowrap; }
+    div.class-list-container .class-card div.accordion {
+      margin: 1em 0 !important;
+      width: 100%; }
+      div.class-list-container .class-card div.accordion .ui.feed > .event > .label + .content {
+        padding: 0; }
+      div.class-list-container .class-card div.accordion div.interests {
+        display: inline-block; }
+        div.class-list-container .class-card div.accordion div.interests span.interest-count {
+          padding: 0.3em 0.6em;
+          background-color: #BBEEBB;
+          font-weight: bold;
+          border-radius: 0.3em;
+          border: 1px solid rgba(0, 0, 0, 0.2); }
+        div.class-list-container .class-card div.accordion div.interests span.name-list {
+          font-style: italic;
+          color: #444; }
