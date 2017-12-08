@@ -6,6 +6,8 @@ var React = require('react'),
     SemanticUI = require('semantic-ui-react'),
     Accordion = SemanticUI.Accordion;
 
+/* global fetch */ // fetch is in default context in browser and Node.js, this is to suppress warnings
+
 var MainInterface = createReactClass({
     getInitialState: function() {
         this.getCourseInterests();
@@ -21,7 +23,7 @@ var MainInterface = createReactClass({
     },
     
     getCourseInterests: function() {
-        fetch("/api/getCourseInterests").then((responseText) => {
+        await fetch("/api/getCourseInterests").then((responseText) => {
             return responseText.json();
         })
         .then((response) => {
@@ -53,7 +55,7 @@ var MainInterface = createReactClass({
                     categoryData={this.state.selectedCategoryData} 
                     getCourseInterests={this.getCourseInterests}/>
             </div>
-        )
+        );
     }
 });
 
@@ -67,7 +69,7 @@ var CategoriesNav = createReactClass({
         );
         return (
             <div className={"category-nav"}>{classList}</div>
-        )
+        );
     }
 });
 
@@ -79,7 +81,7 @@ var CategoryTab = createReactClass({
                 onClick={() => this.props.handleOnClick(this.props.categoryData)}>
                 {this.props.categoryData.displayName}
             </div>
-        )
+        );
     } 
 });
 
@@ -87,15 +89,15 @@ var AccordionComponent = createReactClass({
     getInitialState: function() { 
         return({
             activeIndex: -1
-        })
+        });
     },
 
     handleClick: function(e, titleProps) {
-        const { index, interestCount } = titleProps
-        const { activeIndex } = this.state
-        const newIndex = (activeIndex === index || (activeIndex == -1 && !interestCount )) ? -1 : index
+        const { index, interestCount } = titleProps;
+        const { activeIndex } = this.state;
+        const newIndex = (activeIndex === index || (activeIndex == -1 && !interestCount )) ? -1 : index;
         
-        this.setState({ activeIndex: newIndex })
+        this.setState({ activeIndex: newIndex });
     },
 
   render: function() {
@@ -121,7 +123,7 @@ var AccordionComponent = createReactClass({
                 </div>
             </Accordion.Content>
         </Accordion>
-    )
+    );
   }
 });
 
@@ -159,7 +161,6 @@ var ClassCard = createReactClass({
             this.getInitialState();
             this.props.getCourseInterests();
         });
-        
     },
     
     render: function()  {
@@ -182,7 +183,7 @@ var ClassCard = createReactClass({
                             </div>
                         </div>
                     </div>
-                )
+                );
             });
         }
         return (
@@ -213,7 +214,7 @@ var ClassCard = createReactClass({
                     <button className="ui button" onClick={this.handleInterestedClick}>Interested</button>
                 </div>
             </div>
-        )
+        );
     }
 });
 
@@ -226,7 +227,7 @@ var ClassListContainer = createReactClass({
         );
         return (
             <div className="class-list-container">{classList}</div>
-        )
+        );
     }
 });
 

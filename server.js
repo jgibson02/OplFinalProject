@@ -33,11 +33,6 @@ app.use(express.static(__dirname + '/prod'));
 var routes = require('./routes/router');
 app.use('/', routes);
 
-// Set Express' view engine to render React components
-app.set('views', __dirname + '/views');
-app.set('view engine', 'jsx');
-app.engine('jsx', require('express-react-views').createEngine());
-
 // Handle 404 error
 app.use(function (req, res, next) {
   var err = new Error('File Not Found');

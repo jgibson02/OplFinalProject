@@ -107,6 +107,7 @@ router.get('/classes', function (req, res, next) {
           err.status = 400;
           return next(err);
         } else {
+          console.log(user);
           return res.sendFile('classes.html', {root: 'prod'});
         }
       }
